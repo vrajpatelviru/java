@@ -54,8 +54,7 @@ import java.util.Scanner;
             //using thread class
             new thread().start();
             //using Runnable Inter face
-            Thread t2=new Thread(new runnable());
-            t2.start();
+           new Thread(new runnable()).start();
         }
     }
 
