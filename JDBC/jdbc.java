@@ -9,6 +9,8 @@ delete table :
                 drop table xyz;
 create database :
                 create database xyz;
+detele database :
+                drop database xyz;
 show databases :
                 show databases;
 show table :
