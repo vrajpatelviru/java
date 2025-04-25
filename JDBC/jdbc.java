@@ -1,4 +1,20 @@
+/*
+create table :
+                create table xyz(
+                     no int(20),
+                    name varchar(10),
+                    da date
+                );
+delete table :
+                drop table xyz;
+create database :
+                create database xyz;
+show databases :
+                show databases;
+show table :
+                show tables;
 
+*/
 import java.sql.*;
 import java.io.*;
 import java.util.*;
