@@ -25,6 +25,8 @@ public class jdbc {
             
             System.out.println("1.Insert:");
             System.out.println("2.Show:");
+            System.out.println("3.Update:");
+            System.out.println("4.Delete:");
             System.out.println("Enter your choice::");
             ch=sc.nextInt();
             
@@ -57,6 +59,24 @@ public class jdbc {
                         System.out.println("-------------------------");
                         System.out.println("");
                     }
+                    break;
+                case 3:
+                    String change_design;int change_no;
+                    System.out.println("Enter no that design you have to change:");
+                    change_no=sc.nextInt();
+                    System.out.println("Enter new design:");
+                    change_design=sc.next();
+                    
+                    sql="update temp set desig='"+ change_design +"' where no="+change_no;
+                    stmt.executeUpdate(sql);
+                    break;
+                case 4:
+                    int delete_no;
+                    System.out.println("Enter no that you want to delete:");
+                    delete_no=sc.nextInt();
+                    
+                    sql="delete from temp where no="+delete_no;
+                    stmt.executeUpdate(sql);
             }
         } catch (Exception e) {
             System.out.println(e);
